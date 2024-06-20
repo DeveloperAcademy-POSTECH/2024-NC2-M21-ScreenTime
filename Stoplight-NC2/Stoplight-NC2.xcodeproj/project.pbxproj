@@ -1,0 +1,1420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F30C13292C1A923E001677DD /* Stoplight_NC2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C13282C1A923E001677DD /* Stoplight_NC2App.swift */; };
+		F30C132B2C1A923E001677DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C132A2C1A923E001677DD /* ContentView.swift */; };
+		F30C132D2C1A923F001677DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30C132C2C1A923F001677DD /* Assets.xcassets */; };
+		F30C13302C1A923F001677DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30C132F2C1A923F001677DD /* Preview Assets.xcassets */; };
+		F30C133A2C1A923F001677DD /* Stoplight_NC2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C13392C1A923F001677DD /* Stoplight_NC2Tests.swift */; };
+		F30C13442C1A923F001677DD /* Stoplight_NC2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C13432C1A923F001677DD /* Stoplight_NC2UITests.swift */; };
+		F30C13462C1A923F001677DD /* Stoplight_NC2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C13452C1A923F001677DD /* Stoplight_NC2UITestsLaunchTests.swift */; };
+		F30C135A2C1A9407001677DD /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C13592C1A9407001677DD /* SplashView.swift */; };
+		F30C135E2C1A94BF001677DD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C135D2C1A94BF001677DD /* HomeView.swift */; };
+		F30C13672C1A9D5A001677DD /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30C13662C1A9D5A001677DD /* DeviceActivity.framework */; };
+		F30C136A2C1A9D5A001677DD /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C13692C1A9D5A001677DD /* DeviceActivityMonitorExtension.swift */; };
+		F30C136F2C1A9D5A001677DD /* DeviceActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F30C13642C1A9D5A001677DD /* DeviceActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F30C138B2C1A9D8D001677DD /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30C13792C1A9D78001677DD /* ManagedSettings.framework */; };
+		F30C138E2C1A9D8D001677DD /* ShieldActionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C138D2C1A9D8D001677DD /* ShieldActionExtension.swift */; };
+		F30C13932C1A9D8D001677DD /* ShieldAction.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F30C138A2C1A9D8D001677DD /* ShieldAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F30C13CF2C1AB5F9001677DD /* ScreenTimeReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C13CE2C1AB5F9001677DD /* ScreenTimeReport.swift */; };
+		F30C13D12C1AB5F9001677DD /* TotalActivityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C13D02C1AB5F9001677DD /* TotalActivityReport.swift */; };
+		F30C13D32C1AB5F9001677DD /* TotalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C13D22C1AB5F9001677DD /* TotalActivityView.swift */; };
+		F30C13D82C1AB5F9001677DD /* ScreenTimeReport.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = F30C13CC2C1AB5F9001677DD /* ScreenTimeReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F38BDAB92C2124FA00B489BC /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38BDAB82C2124FA00B489BC /* GoalView.swift */; };
+		F38BDABA2C2125B200B489BC /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38BDAB82C2124FA00B489BC /* GoalView.swift */; };
+		F3B005BE2C1BC8C5004A82ED /* DeviceActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B005BD2C1BC8C5004A82ED /* DeviceActivityManager.swift */; };
+		F3B005C02C1BD194004A82ED /* FamilyControlsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B005BF2C1BD194004A82ED /* FamilyControlsManager.swift */; };
+		F3B005C32C1BD8BE004A82ED /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B005C22C1BD8BE004A82ED /* Bundle+Extension.swift */; };
+		F3B005CA2C1BD9FB004A82ED /* PermissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B005C92C1BD9FB004A82ED /* PermissionViewModel.swift */; };
+		F3B005CE2C1BE14F004A82ED /* PermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B005CD2C1BE14F004A82ED /* PermissionView.swift */; };
+		F3B005D02C1BE4C6004A82ED /* ScreenTimeActinityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B005CF2C1BE4C6004A82ED /* ScreenTimeActinityReport.swift */; };
+		F3B005D62C1BE91B004A82ED /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30C13792C1A9D78001677DD /* ManagedSettings.framework */; };
+		F3B005D72C1BE91B004A82ED /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30C139D2C1A9D9F001677DD /* ManagedSettingsUI.framework */; };
+		F3B005DA2C1BE91B004A82ED /* ShieldConfigurationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B005D92C1BE91B004A82ED /* ShieldConfigurationExtension.swift */; };
+		F3B005DF2C1BE91B004A82ED /* ShieldConfiguration.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F3B005D52C1BE91B004A82ED /* ShieldConfiguration.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3CDF6E12C1FD6CD0083C9AC /* ReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CDF6E02C1FD6CD0083C9AC /* ReportViewModel.swift */; };
+		F3CDF6F32C1FE5730083C9AC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CDF6F22C1FE5730083C9AC /* HomeViewModel.swift */; };
+		F3CDF6FD2C1FE5A80083C9AC /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CDF6FC2C1FE5A80083C9AC /* ReportView.swift */; };
+		F3CDF6FE2C1FE8220083C9AC /* ScreenTimeActinityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B005CF2C1BE4C6004A82ED /* ScreenTimeActinityReport.swift */; };
+		F3CDF6FF2C1FE8250083C9AC /* TotalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C13D22C1AB5F9001677DD /* TotalActivityView.swift */; };
+		F3CDF7002C1FE8280083C9AC /* TotalActivityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C13D02C1AB5F9001677DD /* TotalActivityReport.swift */; };
+		F3CDF7032C1FE8340083C9AC /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30C13692C1A9D5A001677DD /* DeviceActivityMonitorExtension.swift */; };
+		F3CDF7092C2002B70083C9AC /* AppSymbol.png in Resources */ = {isa = PBXBuildFile; fileRef = F3CDF6D02C1FBD680083C9AC /* AppSymbol.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F30C13362C1A923F001677DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F30C131D2C1A923E001677DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F30C13242C1A923E001677DD;
+			remoteInfo = "Stoplight-NC2";
+		};
+		F30C13402C1A923F001677DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F30C131D2C1A923E001677DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F30C13242C1A923E001677DD;
+			remoteInfo = "Stoplight-NC2";
+		};
+		F30C136D2C1A9D5A001677DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F30C131D2C1A923E001677DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F30C13632C1A9D5A001677DD;
+			remoteInfo = DeviceActivityMonitor;
+		};
+		F30C13912C1A9D8D001677DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F30C131D2C1A923E001677DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F30C13892C1A9D8D001677DD;
+			remoteInfo = ShieldAction;
+		};
+		F30C13D62C1AB5F9001677DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F30C131D2C1A923E001677DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F30C13CB2C1AB5F9001677DD;
+			remoteInfo = ScreenTimeReport;
+		};
+		F3B005DD2C1BE91B004A82ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F30C131D2C1A923E001677DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3B005D42C1BE91B004A82ED;
+			remoteInfo = shieldConfiguration;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F30C13732C1A9D5A001677DD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F30C136F2C1A9D5A001677DD /* DeviceActivityMonitor.appex in Embed Foundation Extensions */,
+				F30C13932C1A9D8D001677DD /* ShieldAction.appex in Embed Foundation Extensions */,
+				F3B005DF2C1BE91B004A82ED /* ShieldConfiguration.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C13DC2C1AB5F9001677DD /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				F30C13D82C1AB5F9001677DD /* ScreenTimeReport.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F30C13252C1A923E001677DD /* Stoplight-NC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stoplight-NC2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30C13282C1A923E001677DD /* Stoplight_NC2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stoplight_NC2App.swift; sourceTree = "<group>"; };
+		F30C132A2C1A923E001677DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F30C132C2C1A923F001677DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F30C132F2C1A923F001677DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F30C13352C1A923F001677DD /* Stoplight-NC2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stoplight-NC2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30C13392C1A923F001677DD /* Stoplight_NC2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stoplight_NC2Tests.swift; sourceTree = "<group>"; };
+		F30C133F2C1A923F001677DD /* Stoplight-NC2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stoplight-NC2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30C13432C1A923F001677DD /* Stoplight_NC2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stoplight_NC2UITests.swift; sourceTree = "<group>"; };
+		F30C13452C1A923F001677DD /* Stoplight_NC2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stoplight_NC2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F30C13542C1A929F001677DD /* shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = shared.xcconfig; sourceTree = "<group>"; };
+		F30C13592C1A9407001677DD /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		F30C135D2C1A94BF001677DD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F30C13642C1A9D5A001677DD /* DeviceActivityMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeviceActivityMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30C13662C1A9D5A001677DD /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
+		F30C13692C1A9D5A001677DD /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
+		F30C136B2C1A9D5A001677DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F30C136C2C1A9D5A001677DD /* DeviceActivityMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceActivityMonitor.entitlements; sourceTree = "<group>"; };
+		F30C13792C1A9D78001677DD /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		F30C138A2C1A9D8D001677DD /* ShieldAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30C138D2C1A9D8D001677DD /* ShieldActionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldActionExtension.swift; sourceTree = "<group>"; };
+		F30C138F2C1A9D8D001677DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F30C13902C1A9D8D001677DD /* ShieldAction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShieldAction.entitlements; sourceTree = "<group>"; };
+		F30C139D2C1A9D9F001677DD /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
+		F30C13CC2C1AB5F9001677DD /* ScreenTimeReport.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = ScreenTimeReport.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30C13CE2C1AB5F9001677DD /* ScreenTimeReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeReport.swift; sourceTree = "<group>"; };
+		F30C13D02C1AB5F9001677DD /* TotalActivityReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityReport.swift; sourceTree = "<group>"; };
+		F30C13D22C1AB5F9001677DD /* TotalActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityView.swift; sourceTree = "<group>"; };
+		F30C13D42C1AB5F9001677DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F30C13D52C1AB5F9001677DD /* ScreenTimeReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenTimeReport.entitlements; sourceTree = "<group>"; };
+		F38BDAB82C2124FA00B489BC /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
+		F3B005BD2C1BC8C5004A82ED /* DeviceActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityManager.swift; sourceTree = "<group>"; };
+		F3B005BF2C1BD194004A82ED /* FamilyControlsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyControlsManager.swift; sourceTree = "<group>"; };
+		F3B005C22C1BD8BE004A82ED /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		F3B005C92C1BD9FB004A82ED /* PermissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewModel.swift; sourceTree = "<group>"; };
+		F3B005CD2C1BE14F004A82ED /* PermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionView.swift; sourceTree = "<group>"; };
+		F3B005CF2C1BE4C6004A82ED /* ScreenTimeActinityReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeActinityReport.swift; sourceTree = "<group>"; };
+		F3B005D52C1BE91B004A82ED /* ShieldConfiguration.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShieldConfiguration.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B005D92C1BE91B004A82ED /* ShieldConfigurationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldConfigurationExtension.swift; sourceTree = "<group>"; };
+		F3B005DB2C1BE91B004A82ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3B005DC2C1BE91B004A82ED /* shieldConfiguration.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = shieldConfiguration.entitlements; sourceTree = "<group>"; };
+		F3CDF6CF2C1FBC920083C9AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F3CDF6D02C1FBD680083C9AC /* AppSymbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppSymbol.png; sourceTree = "<group>"; };
+		F3CDF6D32C1FC0800083C9AC /* Stoplight-NC2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Stoplight-NC2.entitlements"; sourceTree = "<group>"; };
+		F3CDF6E02C1FD6CD0083C9AC /* ReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReportViewModel.swift; path = ../../../../../../../../Documents/ReportViewModel.swift; sourceTree = "<group>"; };
+		F3CDF6F22C1FE5730083C9AC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = ../../../../../../../../Documents/HomeViewModel.swift; sourceTree = "<group>"; };
+		F3CDF6FC2C1FE5A80083C9AC /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReportView.swift; path = ../../../../../../../../Documents/ReportView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F30C13222C1A923E001677DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C13322C1A923F001677DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C133C2C1A923F001677DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C13612C1A9D5A001677DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30C13672C1A9D5A001677DD /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C13872C1A9D8D001677DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30C138B2C1A9D8D001677DD /* ManagedSettings.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C13C92C1AB5F9001677DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B005D22C1BE91B004A82ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B005D62C1BE91B004A82ED /* ManagedSettings.framework in Frameworks */,
+				F3B005D72C1BE91B004A82ED /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F30C131C2C1A923E001677DD = {
+			isa = PBXGroup;
+			children = (
+				F30C13272C1A923E001677DD /* Stoplight-NC2 */,
+				F30C13382C1A923F001677DD /* Stoplight-NC2Tests */,
+				F30C13422C1A923F001677DD /* Stoplight-NC2UITests */,
+				F30C13682C1A9D5A001677DD /* DeviceActivityMonitor */,
+				F30C138C2C1A9D8D001677DD /* ShieldAction */,
+				F30C13CD2C1AB5F9001677DD /* ScreenTimeReport */,
+				F3B005D82C1BE91B004A82ED /* ShieldConfiguration */,
+				F30C13652C1A9D5A001677DD /* Frameworks */,
+				F30C13262C1A923E001677DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F30C13262C1A923E001677DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F30C13252C1A923E001677DD /* Stoplight-NC2.app */,
+				F30C13352C1A923F001677DD /* Stoplight-NC2Tests.xctest */,
+				F30C133F2C1A923F001677DD /* Stoplight-NC2UITests.xctest */,
+				F30C13642C1A9D5A001677DD /* DeviceActivityMonitor.appex */,
+				F30C138A2C1A9D8D001677DD /* ShieldAction.appex */,
+				F30C13CC2C1AB5F9001677DD /* ScreenTimeReport.appex */,
+				F3B005D52C1BE91B004A82ED /* ShieldConfiguration.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F30C13272C1A923E001677DD /* Stoplight-NC2 */ = {
+			isa = PBXGroup;
+			children = (
+				F30C13552C1A9331001677DD /* Presentation */,
+				F3CDF6D32C1FC0800083C9AC /* Stoplight-NC2.entitlements */,
+				F3CDF6CF2C1FBC920083C9AC /* Info.plist */,
+				F3B005C12C1BD8B1004A82ED /* Extension */,
+				F3B005BC2C1BC868004A82ED /* Utils */,
+				F30C13522C1A927D001677DD /* App */,
+				F30C132A2C1A923E001677DD /* ContentView.swift */,
+				F30C132C2C1A923F001677DD /* Assets.xcassets */,
+				F30C132E2C1A923F001677DD /* Preview Content */,
+			);
+			path = "Stoplight-NC2";
+			sourceTree = "<group>";
+		};
+		F30C132E2C1A923F001677DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F30C132F2C1A923F001677DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F30C13382C1A923F001677DD /* Stoplight-NC2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F30C13392C1A923F001677DD /* Stoplight_NC2Tests.swift */,
+			);
+			path = "Stoplight-NC2Tests";
+			sourceTree = "<group>";
+		};
+		F30C13422C1A923F001677DD /* Stoplight-NC2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F30C13432C1A923F001677DD /* Stoplight_NC2UITests.swift */,
+				F30C13452C1A923F001677DD /* Stoplight_NC2UITestsLaunchTests.swift */,
+			);
+			path = "Stoplight-NC2UITests";
+			sourceTree = "<group>";
+		};
+		F30C13522C1A927D001677DD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F30C13282C1A923E001677DD /* Stoplight_NC2App.swift */,
+				F30C13532C1A9293001677DD /* XCConfig */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F30C13532C1A9293001677DD /* XCConfig */ = {
+			isa = PBXGroup;
+			children = (
+				F30C13542C1A929F001677DD /* shared.xcconfig */,
+			);
+			path = XCConfig;
+			sourceTree = "<group>";
+		};
+		F30C13552C1A9331001677DD /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F38BDAB52C2124DE00B489BC /* Goal */,
+				F3CDF6DB2C1FD69B0083C9AC /* Report */,
+				F3B005C42C1BD9DB004A82ED /* Permission */,
+				F30C135B2C1A94AF001677DD /* Home */,
+				F30C13562C1A93E5001677DD /* Splash */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F30C13562C1A93E5001677DD /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				F30C13572C1A93EE001677DD /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		F30C13572C1A93EE001677DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F30C13592C1A9407001677DD /* SplashView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F30C135B2C1A94AF001677DD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F30C135F2C1A9C8E001677DD /* ViewModel */,
+				F30C135C2C1A94B6001677DD /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F30C135C2C1A94B6001677DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F30C135D2C1A94BF001677DD /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F30C135F2C1A9C8E001677DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3CDF6F22C1FE5730083C9AC /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F30C13652C1A9D5A001677DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F30C13662C1A9D5A001677DD /* DeviceActivity.framework */,
+				F30C13792C1A9D78001677DD /* ManagedSettings.framework */,
+				F30C139D2C1A9D9F001677DD /* ManagedSettingsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F30C13682C1A9D5A001677DD /* DeviceActivityMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				F30C13692C1A9D5A001677DD /* DeviceActivityMonitorExtension.swift */,
+				F30C136B2C1A9D5A001677DD /* Info.plist */,
+				F30C136C2C1A9D5A001677DD /* DeviceActivityMonitor.entitlements */,
+			);
+			path = DeviceActivityMonitor;
+			sourceTree = "<group>";
+		};
+		F30C138C2C1A9D8D001677DD /* ShieldAction */ = {
+			isa = PBXGroup;
+			children = (
+				F30C138D2C1A9D8D001677DD /* ShieldActionExtension.swift */,
+				F30C138F2C1A9D8D001677DD /* Info.plist */,
+				F30C13902C1A9D8D001677DD /* ShieldAction.entitlements */,
+			);
+			path = ShieldAction;
+			sourceTree = "<group>";
+		};
+		F30C13CD2C1AB5F9001677DD /* ScreenTimeReport */ = {
+			isa = PBXGroup;
+			children = (
+				F30C13CE2C1AB5F9001677DD /* ScreenTimeReport.swift */,
+				F30C13D02C1AB5F9001677DD /* TotalActivityReport.swift */,
+				F30C13D22C1AB5F9001677DD /* TotalActivityView.swift */,
+				F30C13D42C1AB5F9001677DD /* Info.plist */,
+				F30C13D52C1AB5F9001677DD /* ScreenTimeReport.entitlements */,
+				F3B005CF2C1BE4C6004A82ED /* ScreenTimeActinityReport.swift */,
+			);
+			path = ScreenTimeReport;
+			sourceTree = "<group>";
+		};
+		F38BDAB52C2124DE00B489BC /* Goal */ = {
+			isa = PBXGroup;
+			children = (
+				F38BDAB72C2124EC00B489BC /* ViewModel */,
+				F38BDAB62C2124E500B489BC /* View */,
+			);
+			path = Goal;
+			sourceTree = "<group>";
+		};
+		F38BDAB62C2124E500B489BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F38BDAB82C2124FA00B489BC /* GoalView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F38BDAB72C2124EC00B489BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F3B005BC2C1BC868004A82ED /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F3B005BD2C1BC8C5004A82ED /* DeviceActivityManager.swift */,
+				F3B005BF2C1BD194004A82ED /* FamilyControlsManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F3B005C12C1BD8B1004A82ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F3B005C22C1BD8BE004A82ED /* Bundle+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F3B005C42C1BD9DB004A82ED /* Permission */ = {
+			isa = PBXGroup;
+			children = (
+				F3B005C62C1BD9E3004A82ED /* ViewModel */,
+				F3B005C52C1BD9E0004A82ED /* View */,
+			);
+			path = Permission;
+			sourceTree = "<group>";
+		};
+		F3B005C52C1BD9E0004A82ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3B005CD2C1BE14F004A82ED /* PermissionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3B005C62C1BD9E3004A82ED /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3B005C92C1BD9FB004A82ED /* PermissionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F3B005D82C1BE91B004A82ED /* ShieldConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				F3CDF6D02C1FBD680083C9AC /* AppSymbol.png */,
+				F3B005D92C1BE91B004A82ED /* ShieldConfigurationExtension.swift */,
+				F3B005DB2C1BE91B004A82ED /* Info.plist */,
+				F3B005DC2C1BE91B004A82ED /* shieldConfiguration.entitlements */,
+			);
+			path = ShieldConfiguration;
+			sourceTree = "<group>";
+		};
+		F3CDF6DB2C1FD69B0083C9AC /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				F3CDF6DD2C1FD6A50083C9AC /* ViewModel */,
+				F3CDF6DC2C1FD6A30083C9AC /* View */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		F3CDF6DC2C1FD6A30083C9AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3CDF6FC2C1FE5A80083C9AC /* ReportView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F3CDF6DD2C1FD6A50083C9AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3CDF6E02C1FD6CD0083C9AC /* ReportViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F30C13242C1A923E001677DD /* Stoplight-NC2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F30C13492C1A923F001677DD /* Build configuration list for PBXNativeTarget "Stoplight-NC2" */;
+			buildPhases = (
+				F30C13212C1A923E001677DD /* Sources */,
+				F30C13222C1A923E001677DD /* Frameworks */,
+				F30C13232C1A923E001677DD /* Resources */,
+				F30C13732C1A9D5A001677DD /* Embed Foundation Extensions */,
+				F30C13DC2C1AB5F9001677DD /* Embed ExtensionKit Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F30C136E2C1A9D5A001677DD /* PBXTargetDependency */,
+				F30C13922C1A9D8D001677DD /* PBXTargetDependency */,
+				F30C13D72C1AB5F9001677DD /* PBXTargetDependency */,
+				F3B005DE2C1BE91B004A82ED /* PBXTargetDependency */,
+			);
+			name = "Stoplight-NC2";
+			productName = "Stoplight-NC2";
+			productReference = F30C13252C1A923E001677DD /* Stoplight-NC2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F30C13342C1A923F001677DD /* Stoplight-NC2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F30C134C2C1A923F001677DD /* Build configuration list for PBXNativeTarget "Stoplight-NC2Tests" */;
+			buildPhases = (
+				F30C13312C1A923F001677DD /* Sources */,
+				F30C13322C1A923F001677DD /* Frameworks */,
+				F30C13332C1A923F001677DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F30C13372C1A923F001677DD /* PBXTargetDependency */,
+			);
+			name = "Stoplight-NC2Tests";
+			productName = "Stoplight-NC2Tests";
+			productReference = F30C13352C1A923F001677DD /* Stoplight-NC2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F30C133E2C1A923F001677DD /* Stoplight-NC2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F30C134F2C1A923F001677DD /* Build configuration list for PBXNativeTarget "Stoplight-NC2UITests" */;
+			buildPhases = (
+				F30C133B2C1A923F001677DD /* Sources */,
+				F30C133C2C1A923F001677DD /* Frameworks */,
+				F30C133D2C1A923F001677DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F30C13412C1A923F001677DD /* PBXTargetDependency */,
+			);
+			name = "Stoplight-NC2UITests";
+			productName = "Stoplight-NC2UITests";
+			productReference = F30C133F2C1A923F001677DD /* Stoplight-NC2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F30C13632C1A9D5A001677DD /* DeviceActivityMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F30C13702C1A9D5A001677DD /* Build configuration list for PBXNativeTarget "DeviceActivityMonitor" */;
+			buildPhases = (
+				F30C13602C1A9D5A001677DD /* Sources */,
+				F30C13612C1A9D5A001677DD /* Frameworks */,
+				F30C13622C1A9D5A001677DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeviceActivityMonitor;
+			productName = DeviceActivityMonitor;
+			productReference = F30C13642C1A9D5A001677DD /* DeviceActivityMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F30C13892C1A9D8D001677DD /* ShieldAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F30C13942C1A9D8D001677DD /* Build configuration list for PBXNativeTarget "ShieldAction" */;
+			buildPhases = (
+				F30C13862C1A9D8D001677DD /* Sources */,
+				F30C13872C1A9D8D001677DD /* Frameworks */,
+				F30C13882C1A9D8D001677DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShieldAction;
+			productName = ShieldAction;
+			productReference = F30C138A2C1A9D8D001677DD /* ShieldAction.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F30C13CB2C1AB5F9001677DD /* ScreenTimeReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F30C13D92C1AB5F9001677DD /* Build configuration list for PBXNativeTarget "ScreenTimeReport" */;
+			buildPhases = (
+				F30C13C82C1AB5F9001677DD /* Sources */,
+				F30C13C92C1AB5F9001677DD /* Frameworks */,
+				F30C13CA2C1AB5F9001677DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenTimeReport;
+			productName = ScreenTimeReport;
+			productReference = F30C13CC2C1AB5F9001677DD /* ScreenTimeReport.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+		F3B005D42C1BE91B004A82ED /* ShieldConfiguration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3B005E02C1BE91B004A82ED /* Build configuration list for PBXNativeTarget "ShieldConfiguration" */;
+			buildPhases = (
+				F3B005D12C1BE91B004A82ED /* Sources */,
+				F3B005D22C1BE91B004A82ED /* Frameworks */,
+				F3B005D32C1BE91B004A82ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShieldConfiguration;
+			productName = shieldConfiguration;
+			productReference = F3B005D52C1BE91B004A82ED /* ShieldConfiguration.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F30C131D2C1A923E001677DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					F30C13242C1A923E001677DD = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					F30C13342C1A923F001677DD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F30C13242C1A923E001677DD;
+					};
+					F30C133E2C1A923F001677DD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F30C13242C1A923E001677DD;
+					};
+					F30C13632C1A9D5A001677DD = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					F30C13892C1A9D8D001677DD = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					F30C13CB2C1AB5F9001677DD = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					F3B005D42C1BE91B004A82ED = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = F30C13202C1A923E001677DD /* Build configuration list for PBXProject "Stoplight-NC2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F30C131C2C1A923E001677DD;
+			productRefGroup = F30C13262C1A923E001677DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F30C13242C1A923E001677DD /* Stoplight-NC2 */,
+				F30C13342C1A923F001677DD /* Stoplight-NC2Tests */,
+				F30C133E2C1A923F001677DD /* Stoplight-NC2UITests */,
+				F30C13632C1A9D5A001677DD /* DeviceActivityMonitor */,
+				F30C13892C1A9D8D001677DD /* ShieldAction */,
+				F30C13CB2C1AB5F9001677DD /* ScreenTimeReport */,
+				F3B005D42C1BE91B004A82ED /* ShieldConfiguration */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F30C13232C1A923E001677DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30C13302C1A923F001677DD /* Preview Assets.xcassets in Resources */,
+				F30C132D2C1A923F001677DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C13332C1A923F001677DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C133D2C1A923F001677DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C13622C1A9D5A001677DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C13882C1A9D8D001677DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C13CA2C1AB5F9001677DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B005D32C1BE91B004A82ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CDF7092C2002B70083C9AC /* AppSymbol.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F30C13212C1A923E001677DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CDF6FE2C1FE8220083C9AC /* ScreenTimeActinityReport.swift in Sources */,
+				F38BDAB92C2124FA00B489BC /* GoalView.swift in Sources */,
+				F3CDF6E12C1FD6CD0083C9AC /* ReportViewModel.swift in Sources */,
+				F30C132B2C1A923E001677DD /* ContentView.swift in Sources */,
+				F3CDF6FD2C1FE5A80083C9AC /* ReportView.swift in Sources */,
+				F3CDF6FF2C1FE8250083C9AC /* TotalActivityView.swift in Sources */,
+				F3B005C32C1BD8BE004A82ED /* Bundle+Extension.swift in Sources */,
+				F3CDF7002C1FE8280083C9AC /* TotalActivityReport.swift in Sources */,
+				F3B005CA2C1BD9FB004A82ED /* PermissionViewModel.swift in Sources */,
+				F30C135E2C1A94BF001677DD /* HomeView.swift in Sources */,
+				F3B005CE2C1BE14F004A82ED /* PermissionView.swift in Sources */,
+				F3CDF6F32C1FE5730083C9AC /* HomeViewModel.swift in Sources */,
+				F3B005BE2C1BC8C5004A82ED /* DeviceActivityManager.swift in Sources */,
+				F3CDF7032C1FE8340083C9AC /* DeviceActivityMonitorExtension.swift in Sources */,
+				F30C13292C1A923E001677DD /* Stoplight_NC2App.swift in Sources */,
+				F30C135A2C1A9407001677DD /* SplashView.swift in Sources */,
+				F3B005C02C1BD194004A82ED /* FamilyControlsManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C13312C1A923F001677DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30C133A2C1A923F001677DD /* Stoplight_NC2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C133B2C1A923F001677DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30C13442C1A923F001677DD /* Stoplight_NC2UITests.swift in Sources */,
+				F30C13462C1A923F001677DD /* Stoplight_NC2UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C13602C1A9D5A001677DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30C136A2C1A9D5A001677DD /* DeviceActivityMonitorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C13862C1A9D8D001677DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30C138E2C1A9D8D001677DD /* ShieldActionExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F30C13C82C1AB5F9001677DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30C13D32C1AB5F9001677DD /* TotalActivityView.swift in Sources */,
+				F3B005D02C1BE4C6004A82ED /* ScreenTimeActinityReport.swift in Sources */,
+				F38BDABA2C2125B200B489BC /* GoalView.swift in Sources */,
+				F30C13CF2C1AB5F9001677DD /* ScreenTimeReport.swift in Sources */,
+				F30C13D12C1AB5F9001677DD /* TotalActivityReport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3B005D12C1BE91B004A82ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B005DA2C1BE91B004A82ED /* ShieldConfigurationExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F30C13372C1A923F001677DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F30C13242C1A923E001677DD /* Stoplight-NC2 */;
+			targetProxy = F30C13362C1A923F001677DD /* PBXContainerItemProxy */;
+		};
+		F30C13412C1A923F001677DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F30C13242C1A923E001677DD /* Stoplight-NC2 */;
+			targetProxy = F30C13402C1A923F001677DD /* PBXContainerItemProxy */;
+		};
+		F30C136E2C1A9D5A001677DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F30C13632C1A9D5A001677DD /* DeviceActivityMonitor */;
+			targetProxy = F30C136D2C1A9D5A001677DD /* PBXContainerItemProxy */;
+		};
+		F30C13922C1A9D8D001677DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F30C13892C1A9D8D001677DD /* ShieldAction */;
+			targetProxy = F30C13912C1A9D8D001677DD /* PBXContainerItemProxy */;
+		};
+		F30C13D72C1AB5F9001677DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F30C13CB2C1AB5F9001677DD /* ScreenTimeReport */;
+			targetProxy = F30C13D62C1AB5F9001677DD /* PBXContainerItemProxy */;
+		};
+		F3B005DE2C1BE91B004A82ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3B005D42C1BE91B004A82ED /* ShieldConfiguration */;
+			targetProxy = F3B005DD2C1BE91B004A82ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F30C13472C1A923F001677DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F30C13482C1A923F001677DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F30C134A2C1A923F001677DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Stoplight-NC2/Stoplight-NC2.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Stoplight-NC2/Preview Content\"";
+				DEVELOPMENT_TEAM = U5F437QJA7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Stoplight-NC2/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyxxgsoo.Stoplight-NC2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F30C134B2C1A923F001677DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Stoplight-NC2/Stoplight-NC2.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Stoplight-NC2/Preview Content\"";
+				DEVELOPMENT_TEAM = U5F437QJA7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Stoplight-NC2/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyxxgsoo.Stoplight-NC2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F30C134D2C1A923F001677DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F437QJA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyxxgsoo.Stoplight-NC2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stoplight-NC2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stoplight-NC2";
+			};
+			name = Debug;
+		};
+		F30C134E2C1A923F001677DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F437QJA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyxxgsoo.Stoplight-NC2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stoplight-NC2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stoplight-NC2";
+			};
+			name = Release;
+		};
+		F30C13502C1A923F001677DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F437QJA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyxxgsoo.Stoplight-NC2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Stoplight-NC2";
+			};
+			name = Debug;
+		};
+		F30C13512C1A923F001677DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F437QJA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyxxgsoo.Stoplight-NC2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Stoplight-NC2";
+			};
+			name = Release;
+		};
+		F30C13712C1A9D5A001677DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeviceActivityMonitor/DeviceActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F437QJA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeviceActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyxxgsoo.Stoplight-NC2.DeviceActivityMonitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F30C13722C1A9D5A001677DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeviceActivityMonitor/DeviceActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F437QJA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeviceActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyxxgsoo.Stoplight-NC2.DeviceActivityMonitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F30C13952C1A9D8D001677DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldAction/ShieldAction.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F437QJA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShieldAction;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyxxgsoo.Stoplight-NC2.ShieldAction";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F30C13962C1A9D8D001677DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldAction/ShieldAction.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F437QJA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShieldAction;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyxxgsoo.Stoplight-NC2.ShieldAction";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F30C13DA2C1AB5F9001677DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenTimeReport/ScreenTimeReport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F437QJA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenTimeReport/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenTimeReport;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyxxgsoo.Stoplight-NC2.ScreenTimeReport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F30C13DB2C1AB5F9001677DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenTimeReport/ScreenTimeReport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F437QJA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenTimeReport/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenTimeReport;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyxxgsoo.Stoplight-NC2.ScreenTimeReport";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3B005E12C1BE91B004A82ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = shieldConfiguration/shieldConfiguration.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F437QJA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = shieldConfiguration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = shieldConfiguration;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyxxgsoo.Stoplight-NC2.ShieldConfiguration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3B005E22C1BE91B004A82ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = shieldConfiguration/shieldConfiguration.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U5F437QJA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = shieldConfiguration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = shieldConfiguration;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyxxgsoo.Stoplight-NC2.ShieldConfiguration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F30C13202C1A923E001677DD /* Build configuration list for PBXProject "Stoplight-NC2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30C13472C1A923F001677DD /* Debug */,
+				F30C13482C1A923F001677DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F30C13492C1A923F001677DD /* Build configuration list for PBXNativeTarget "Stoplight-NC2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30C134A2C1A923F001677DD /* Debug */,
+				F30C134B2C1A923F001677DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F30C134C2C1A923F001677DD /* Build configuration list for PBXNativeTarget "Stoplight-NC2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30C134D2C1A923F001677DD /* Debug */,
+				F30C134E2C1A923F001677DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F30C134F2C1A923F001677DD /* Build configuration list for PBXNativeTarget "Stoplight-NC2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30C13502C1A923F001677DD /* Debug */,
+				F30C13512C1A923F001677DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F30C13702C1A9D5A001677DD /* Build configuration list for PBXNativeTarget "DeviceActivityMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30C13712C1A9D5A001677DD /* Debug */,
+				F30C13722C1A9D5A001677DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F30C13942C1A9D8D001677DD /* Build configuration list for PBXNativeTarget "ShieldAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30C13952C1A9D8D001677DD /* Debug */,
+				F30C13962C1A9D8D001677DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F30C13D92C1AB5F9001677DD /* Build configuration list for PBXNativeTarget "ScreenTimeReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30C13DA2C1AB5F9001677DD /* Debug */,
+				F30C13DB2C1AB5F9001677DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3B005E02C1BE91B004A82ED /* Build configuration list for PBXNativeTarget "ShieldConfiguration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3B005E12C1BE91B004A82ED /* Debug */,
+				F3B005E22C1BE91B004A82ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F30C131D2C1A923E001677DD /* Project object */;
+}

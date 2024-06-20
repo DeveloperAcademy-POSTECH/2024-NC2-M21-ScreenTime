@@ -1,0 +1,11 @@
+//
+//  shared.xcconfig
+//  Stoplight-NC2
+//
+//  Created by kyungsoolee on 6/13/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_GROUP_NAME = group.com.liver.stoplight
